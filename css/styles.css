@@ -132,6 +132,12 @@ more global style
   background: var(--clr-primary-light);
 }
 
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 /* 
 ============
 END of more global style 
@@ -238,6 +244,20 @@ SKILLS
 
 .skill:hover .skill-icon {
   transform: translateY(-0.5rem);
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    float: left;
+    width: 25%;
+  }
 }
 
 /* 
