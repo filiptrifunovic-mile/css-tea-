@@ -138,6 +138,29 @@ more global style
   display: table;
 }
 
+.section-title h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
+
 /* 
 ============
 END of more global style 
@@ -263,5 +286,57 @@ SKILLS
 /* 
 ============== 
 END OF SKILLS
+============== 
+*/
+
+/* 
+============== 
+ABOUT
+============== 
+*/
+
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+}
+
+.about-picture {
+  transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+  transform: scale(1.1);
+}
+
+.about-text {
+  max-width: fit-content;
+}
+
+.about-text {
+  max-width: 27rem;
+  color: var(--clr-gray-5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+
+  .about-info {
+    padding-left: 2rem;
+  }
+}
+
+/* 
+============== 
+END OF ABOUT
 ============== 
 */
