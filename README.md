@@ -1,1 +1,1 @@
-filip-tea.netlify.app
+https://filip-tea.netlify.app
