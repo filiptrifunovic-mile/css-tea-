@@ -429,6 +429,23 @@ SERVICES
   transition: var(--transition);
 }
 
+.service-img-container {
+  position: relative;
+}
+
+.service-icon {
+  font-size: 2rem;
+  background: var(--clr-primary-light);
+  color: var(--clr-primary);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 5px solid var(--clr-gray-10);
+}
+
 .service-card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
